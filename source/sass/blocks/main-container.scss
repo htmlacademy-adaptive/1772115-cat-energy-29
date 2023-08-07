@@ -1,0 +1,19 @@
+.main-container__wrapper{
+  display: flex;
+  flex-direction: column;
+  font-family: "Oswald", sans-serif;
+  line-height: 60px;
+  color: #ffffff;
+  text-align: center;
+  align-items: center;
+  background-image: url("../images/index-background.jpg"),
+  linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85));
+  background-position: top;
+  background-size: auto 302px;
+  background-repeat: no-repeat;
+
+}
+.main-container__imge{
+  margin-bottom: 3px;
+}
+
