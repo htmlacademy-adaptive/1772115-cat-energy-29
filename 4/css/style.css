@@ -1,0 +1,114 @@
+.main-nav {
+  font-family: "Oswald", sans-serif;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.main-header {
+  background-color: #ffffff;
+}
+
+.main-container__wrapper {
+  display: flex;
+  flex-direction: column;
+  font-family: "Oswald", sans-serif;
+  line-height: 60px;
+  color: #ffffff;
+  text-align: center;
+  align-items: center;
+  background-image: url("../images/index-background.jpg"), linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85));
+  background-position: top;
+  background-size: auto 302px;
+  background-repeat: no-repeat;
+}
+
+.main-container__imge {
+  margin-bottom: 3px;
+}
+
+.program__item {
+  background-color: #F2F2F2;
+}
+
+.body {
+  background-color: #ffffff;
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://fonts.googleapis.com/css2?family=Lato&family=Oswald&display=swap");
+  font-display: swap;
+}
+.main-container__title {
+  font-family: "Oswald", sans-serif;
+  line-height: 36px;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.main-container__slogan {
+  line-height: 14px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 29px;
+}
+
+.program__title {
+  font-family: "Oswald", sans-serif;
+  line-height: 37px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+  margin-bottom: 29px;
+}
+
+.program__description {
+  font-family: "Lato", sans-serif;
+  line-height: 18px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 29px;
+}
+
+:root {
+  --font-primary: "Oswald", "Arial", sans-serif;
+  --font-secondary: "Lato", "Arial", sans-serif;
+  --color-font-primary:#ffffff;
+  --color-font-second: #68B738D9;
+  --color-font-program: #F2F2F2;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  white-space: nowrap;
+  border: 0;
+}
+
+:root {
+  --font-primary: "Oswald", "Arial", sans-serif;
+  --font-secondary: "Lato", "Arial", sans-serif;
+  --color-font-primary:#ffffff;
+  --color-font-second: #68B738D9;
+  --color-font-program: #F2F2F2;
+}
+/*# sourceMappingURL=style.css.map */
