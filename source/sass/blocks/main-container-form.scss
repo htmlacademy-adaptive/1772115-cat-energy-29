@@ -1,0 +1,23 @@
+.main-container-form{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main-container-form__title{
+font-family: var(--font-primary);
+  font-size: 36px;
+  line-height: 36px;
+}
+.main-container-form__description{
+  font-family: var(--font-primary);
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.cooperation__text{
+  font-family: var(--font-secondary);
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+  margin: 0 auto;
+}
