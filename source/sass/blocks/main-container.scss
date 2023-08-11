@@ -1,7 +1,7 @@
-.main-container__wrapper{
+.main-container__wrapper {
   display: flex;
   flex-direction: column;
-  font-family: "Oswald", sans-serif;
+  font-family: var(--font-secondary);
   line-height: 60px;
   color: #ffffff;
   text-align: center;
@@ -11,9 +11,45 @@
   background-position: top;
   background-size: auto 302px;
   background-repeat: no-repeat;
-
 }
-.main-container__imge{
+
+.main-container__title {
+  font-family: var(--font-primary);
+  line-height: 36px;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.main-container__slogan {
+  font-family: var(--font-primary);
+  line-height: 14px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 29px;
+}
+
+.main-container__imge {
   margin-bottom: 3px;
 }
 
+.main-container__cooperation{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+    padding: 26px 0 20px 0;
+}
+.cooperation__title{
+  font-family: var(--font-primary);
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+  margin: 0 auto;
+}
+.cooperation__text{
+  font-family: var(--font-secondary);
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+  margin: 0 auto;
+}
