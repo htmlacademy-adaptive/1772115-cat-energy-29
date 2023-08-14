@@ -5,8 +5,11 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Кэт энерджи.Форма.</title>
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald&display=swap" rel="stylesheet">
 </head>
 <body class="form-body">
 <header class="main-header width-mobile">
@@ -40,26 +43,26 @@
   <h1 class="main-container-form__title">Подбор программы</h1>
   <p class="main-container-form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
   <form class="main-container-form__container-form container-form" action="https://echo.htmlacademy.ru/" method="post">
-    <fieldset class="container-form__personal-data personal-data">
+    <fieldset class="container-form__personal-data personal-data fieldset-style">
       <legend class="visually-hidden">Персональные данные</legend>
-      <ul class="personal-data__list">
+      <ul class="personal-data__list font_type">
         <li class="personal-data__item">
           <label for="personal-data__name"> ИМЯ:* </label>
-          <input class="personal-data__field" type="text" id="personal-data__name" placeholder="Барсик">
+          <input class="personal-data__field input_style" type="text" id="personal-data__name" placeholder="Барсик">
         </li>
         <li class="personal-data__item">
           <label for="personal-data__weight"> Вес (кг):* </label>
-          <input class="personal-data__field" type="text" id="personal-data__weight" placeholder="7">
+          <input class="personal-data__field input_style" type="text" id="personal-data__weight" placeholder="7">
         </li>
         <li class="personal-data__item">
           <label for="personal-data__age"> Возраст (лет): </label>
-          <input class="personal-data__field" type="text" id="personal-data__age" placeholder="7">
+          <input class="personal-data__field input_style" type="text" id="personal-data__age" placeholder="7">
         </li>
       </ul>
     </fieldset>
-    <fieldset class="container-form__program-form program-form">
+    <fieldset class="container-form__program-form program-form fieldset-style">
       <legend class="visually-hidden">Выбор программы</legend>
-      <ul class="program-form__list">
+      <ul class="program-form__list font_type">
         <li class="program-form__item">
           <label class="program-form__control">
             <input type="radio" name="slim" value="slim" checked>
@@ -83,28 +86,28 @@
         </li>
       </ul>
     </fieldset>
-    <fieldset class="container-form__contact-data contact-data">
-      <legend class="">Контактные данные (владельца кота)</legend>
-      <ul>
+    <fieldset class="container-form__contact-data contact-data fieldset-style">
+      <legend class="title-style">Контактные данные (владельца кота)</legend>
+      <ul class="contact-data__list font_type">
         <li class="contact-data__e-mail e-mail">
           <label for="e-mail"> E-mail:* </label>
-          <input class="e-mail__field" type="text" id="e-mail" placeholder="кuklachev@gmail.com">
+          <input class="e-mail__field input_style" type="text" id="e-mail" placeholder="кuklachev@gmail.com">
         </li>
         <li class="contact-data__telephone telephone">
           <label for="telephone"> Телефон:* </label>
-          <input class="telephone__field" type="text" id="telephone" placeholder="8 (960) 900-60-90">
+          <input class="telephone__field input_style" type="text" id="telephone" placeholder="8 (960) 900-60-90">
         </li>
       </ul>
     </fieldset>
-    <fieldset class="container-form__comment">
-      <legend>Комментарий</legend>
+    <fieldset class="container-form__comment fieldset-style">
+      <legend class="container-form__comment__title title-style">Комментарий</legend>
       <label for="container-form__comment-input-box"></label>
       <textarea name="comment" placeholder="Расскажите обо всех повадках кота"
                 id="container-form__comment-input-box"></textarea>
     </fieldset>
-    <fieldset class="container-form__optionally">
-      <legend>Дополнительно</legend>
-      <ul>
+    <fieldset class="container-form__optionally fieldset-style">
+      <legend class="title-style">Дополнительно</legend>
+      <ul class=" container-form__optionally__list font_type">
         <li>
           <label>
             <input type="checkbox" name="optionally" value="sweetener" checked>
@@ -135,7 +138,7 @@
         </li>
       </ul>
       <button type="submit">отправить заявку</button>
-      <span>* — Обязательные поля</span>
+      <span class="container-form__optionally__annotation">* — Обязательные поля</span>
     </fieldset>
   </form>
   <div class="main-container__cooperation cooperation width-mobile">

@@ -1,5 +1,30 @@
 .main-header{
-  display: block;
+  display: flex;
+  width: var(--width-mobile-section);
+  height: 66px;
   margin-left: auto;
   margin-right: auto;
+}
+@media (min-width: 707px){
+  .main-header{
+    width: var(--width-tablet-section);
+    height: 75px;
+  }
+}
+
+.main-nav__list{
+  display: flex;
+  flex-direction:column;
+
+  @media (min-width: 707px){
+    display: flex;
+    flex-direction:row;
+    gap: 33px;
+    align-items: flex-end;
+  }
+}
+.main-nav__toggle{
+  @media (min-width: 707px){
+    display: none;
+  }
 }

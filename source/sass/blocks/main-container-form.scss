@@ -2,17 +2,22 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width: var(--width-mobile-section);
 }
 .main-container-form__title{
 font-family: var(--font-primary);
   font-size: 36px;
   line-height: 36px;
+  margin: 27px 0 37px 0;
 }
 .main-container-form__description{
   font-family: var(--font-primary);
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  padding: 0;
+  margin-bottom: 39px;
+  margin-top: 0;
 }
 .cooperation__text{
   font-family: var(--font-secondary);
@@ -20,4 +25,80 @@ font-family: var(--font-primary);
   line-height: 20px;
   color: #444444;
   margin: 0 auto;
+}
+.font_type{
+  @include form_font;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: var(--width-mobile-section);
+}
+.input_style{
+  margin: 0;
+  padding: 14px 12px 13px 15px;
+}
+input::placeholder{
+  @include form_font;
+}
+textarea::placeholder{
+  @include form_font;
+}
+
+textarea{
+  box-sizing: border-box;
+  padding: 14px 14px 118px 15px;
+  margin: 0;
+  width: 280px;
+}
+.container-form__optionally__annotation{
+  font-family: var(--font-primary);
+  font-size: 14px;
+  line-height: 16px;
+}
+.personal-data__list{
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.personal-data__item{
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+.title-style{
+  font-family: var(--font-primary);
+  font-size: 24px;
+  line-height: 26px;
+  padding: 0;
+}
+.program-form__list{
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  padding: 22px 0 45px 0;
+  margin: 0;
+}
+.fieldset-style{
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+.contact-data__list{
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin: 35px 0 24px 0;
+}
+.container-form__optionally__list{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 36px 0 34px 0;
+}
+.container-form__comment__title{
+  margin-bottom: 35px;
+}
+.container-form__personal-data{
+  margin-bottom: 24px;
 }
