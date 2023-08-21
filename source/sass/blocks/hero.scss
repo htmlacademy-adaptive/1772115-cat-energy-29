@@ -1,4 +1,4 @@
-.main-container__wrapper {
+.hero {
   display: flex;
   flex-direction: column;
   font-family: var(--font-secondary);
@@ -14,15 +14,16 @@
   background-repeat: no-repeat;
 }
 
-.main-container__title {
+.hero__title {
   font-family: var(--font-primary);
+  font-weight: 400;
   font-size: 36px;
   line-height: 36px;
   margin: 0;
   margin-bottom: 25px;
 }
 
-.main-container__slogan {
+.hero__slogan {
   font-family: var(--font-primary);
   line-height: 14px;
   text-transform: uppercase;
@@ -30,7 +31,7 @@
   margin-bottom: 29px;
 }
 
-.main-container__img {
+.hero__img {
   margin-bottom: 3px;
 }
 

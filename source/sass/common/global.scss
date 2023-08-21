@@ -1,8 +1,7 @@
  body{
-  background-color: #ffffff;
-  font-weight: 400;
+   min-width: var(--width-mobile-section);
+   min-height: 100%;
+   margin: 0;
+   font-family: var(--font-primary);
+}
 
-}
-.width-mobile{
-width: var(--width-mobile-section);
-}

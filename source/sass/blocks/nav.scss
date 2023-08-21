@@ -1,0 +1,40 @@
+@use "../common/variables.scss";
+.nav {
+  font-family: "Oswald", sans-serif;
+  text-decoration: none;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+}
+.nav__list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width:$width-tablet) {
+    width: 404px;
+    display: flex;
+    justify-content: space-between;
+    gap: 33px;
+  }
+
+  @media (min-width:$width-desktop){
+    width: 478px;
+  }
+
+}
+.nav__item{
+  color: #000000;
+}
+.nav__item-link{
+  display: block;
+  text-decoration: none;
+  color: #000000;
+}
+
+.nav__toggle{
+  @media (min-width:$width-tablet){
+    display: none;
+  }
+}
