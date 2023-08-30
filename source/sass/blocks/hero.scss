@@ -33,5 +33,16 @@
 
 .hero__img {
   margin-bottom: 3px;
-}
+  display: block;
+  width: 280px;
+  height: 270px;
 
+  @media (min-width: $width-tablet){
+    width: 709px;
+    height: 609px;
+  }
+  @media (min-width: $width-desktop){
+    width: 552px;
+    height: 499px;
+  }
+}

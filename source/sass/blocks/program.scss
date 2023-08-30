@@ -1,13 +1,11 @@
 @use "../common/variables.scss";
 
-.program{
-  display: block;
+.program {
   margin: 0 auto;
-  max-width: var(--width-mobile-section);
   box-sizing: border-box;
-  }
+}
 
-.program__list{
+.program__list {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,61 +14,60 @@
   padding: 0;
   width: var(--width-mobile-section);
 
-  @media (min-width:$width-tablet) {
+  @media (min-width: $width-tablet) {
     gap: 30px;
   }
 
-  @media (min-width:$width-desktop){
+  @media (min-width: $width-desktop) {
     width: var(--width-desktop-section);
     flex-direction: row;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
     gap: 80px;
   }
 }
-.program__item{
+
+.program__item {
   list-style-type: none;
   background-color: var(--color-font-program);
   position: relative;
   padding: 30px 33px 18px 20px;
 
-  @media (min-width:$width-tablet) {
+  @media (min-width: $width-tablet) {
     width: var(--width-tablet-section);
     padding: 77px 28px 53px 52px;
   }
-  @media (min-width:$width-desktop){
+  @media (min-width: $width-desktop) {
     width: var(--width-desktop-section);
     padding: 77px 61px 55px 52px;
   }
-
 }
-.program__item::before{
+
+.program__item::before {
   content: "";
   background-color: var(--color-font-second);
   position: absolute;
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  top:24px;
+  top: 24px;
   left: 20px;
 
-  @media (min-width:$width-tablet){
-    top:92px;
+  @media (min-width: $width-tablet) {
+    top: 92px;
     left: auto;
     right: 63px;
     width: 200px;
     height: 200px;
   }
 
-  @media (min-width:$width-desktop){
-    top:47px;
+  @media (min-width: $width-desktop) {
+    top: 47px;
     left: 52px;
     width: 100px;
     height: 100px;
   }
 }
-.program__title{
+
+.program__title {
   font-family: var(--font-primary);
   font-weight: 400;
   font-size: 24px;
@@ -80,9 +77,9 @@
   margin-top: 0;
   margin-bottom: 29px;
   margin-left: 90px;
-  padding:0;
+  padding: 0;
 
-  @media (min-width:$width-tablet){
+  @media (min-width: $width-tablet) {
     font-size: 36px;
     line-height: 36px;
     margin-top: 0;
@@ -90,13 +87,15 @@
     margin-left: 0;
   }
 
-  @media (min-width:$width-desktop){
+  @media (min-width: $width-desktop) {
     margin-top: 0;
     margin-bottom: 73px;
     margin-left: 214px;
+    max-width: var(--width-desktop-section);
   }
-  }
-.program__description{
+}
+
+.program__description {
   font-family: var(--font-secondary);
   font-weight: 400;
   font-size: 14px;
@@ -105,18 +104,18 @@
   margin-top: 0;
   margin-bottom: 42px;
 
-  @media (min-width:$width-tablet) {
+  @media (min-width: $width-tablet) {
     max-width: 340px;
     font-size: 16px;
     line-height: 24px;
     color: #000000;
   }
-  @media (min-width:$width-desktop){
+  @media (min-width: $width-desktop) {
     max-width: 457px;
   }
-
 }
-.program__control{
+
+.program__control {
   display: block;
   font-family: var(--font-primary);
   font-weight: 400;
@@ -126,7 +125,7 @@
   text-decoration: none;
   color: #000000;
 
-  @media (min-width:$width-tablet){
+  @media (min-width: $width-tablet) {
     font-size: 20px;
   }
 }
