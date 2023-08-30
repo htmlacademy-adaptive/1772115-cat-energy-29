@@ -1,0 +1,19 @@
+@use "../common/variables.scss";
+
+.header {
+  /*height: 66px;*/
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  width: var(--width-mobile-section);
+
+  @media (min-width: $width-tablet) {
+    width: var(--width-tablet-section);
+    align-items: center;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: var(--width-desktop-section);
+  }
+}

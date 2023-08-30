@@ -1,7 +1,8 @@
-.main-container__wrapper {
+.hero {
   display: flex;
   flex-direction: column;
   font-family: var(--font-secondary);
+  font-weight: 400;
   line-height: 60px;
   color: #ffffff;
   text-align: center;
@@ -13,14 +14,16 @@
   background-repeat: no-repeat;
 }
 
-.main-container__title {
+.hero__title {
   font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 36px;
   line-height: 36px;
   margin: 0;
   margin-bottom: 25px;
 }
 
-.main-container__slogan {
+.hero__slogan {
   font-family: var(--font-primary);
   line-height: 14px;
   text-transform: uppercase;
@@ -28,28 +31,18 @@
   margin-bottom: 29px;
 }
 
-.main-container__imge {
+.hero__img {
   margin-bottom: 3px;
-}
+  display: block;
+  width: 280px;
+  height: 270px;
 
-.main-container__cooperation{
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-    padding: 26px 0 20px 0;
-}
-.cooperation__title{
-  font-family: var(--font-primary);
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: #111111;
-  margin: 0 auto;
-}
-.cooperation__text{
-  font-family: var(--font-secondary);
-  font-size: 14px;
-  line-height: 20px;
-  color: #444444;
-  margin: 0 auto;
+  @media (min-width: $width-tablet){
+    width: 709px;
+    height: 609px;
+  }
+  @media (min-width: $width-desktop){
+    width: 552px;
+    height: 499px;
+  }
 }
